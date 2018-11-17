@@ -28,7 +28,18 @@ class ViewController: UIViewController {
     
     @IBAction func alertHello() {
         let difference = abs(targetValue - currentValue)
-        let points = 100 - difference
+        let points: Int
+        if difference == 0 {
+            points = 200
+        } else if difference < 5 {
+            points = (100 - difference) + 50
+        } else if difference < 10 {
+            points = (100 - difference) + 25
+        } else {
+            points = 100 - difference
+        }
+        
+        
         score += points
         
         let title: String
