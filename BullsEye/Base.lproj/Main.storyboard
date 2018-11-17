@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hit Me!"/>
                                 <connections>
-                                    <action selector="alertHello" destination="BYZ-38-t0r" eventType="touchUpInside" id="iHH-hw-3kO"/>
+                                    <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="61j-H7-xFX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put the Bull's Eye as close as you can to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwC-5n-JCS">
@@ -93,6 +93,10 @@
                                 <rect key="frame" x="42" y="313" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="resetGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGv-xx-2n2"/>
+                                    <action selector="startNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="d87-KZ-EbW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O97-9f-qjn">
                                 <rect key="frame" x="577" y="317" width="22" height="22"/>
